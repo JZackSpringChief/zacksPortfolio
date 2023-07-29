@@ -361,10 +361,10 @@
               .then(
                 () => {
                   alert("Message has sent!");
-                  setForm({
-                    name: "",
-                    email: "",
-                    message: "",
+                  ({
+                    from_name: (document.getElementById("name").value = ""),
+                    email_id: (document.getElementById("email").value = ""),
+                    message: (document.getElementById("message").value = ""),
                   });
                 },
                 (error) => {
